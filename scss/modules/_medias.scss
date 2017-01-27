@@ -1,0 +1,44 @@
+/* Celulares antigos iPhone 4s */
+$mobile-min-width:320px;
+$mobile-max-width:439px;
+/* Celulares modernos */
+$smartmobile-min-width: 440px;
+$smartmobile-max-width:767px;
+/* Tablets */
+$tablet-min-width: 768px;
+$tablet-max-width:991px;
+/* Notebooks */
+$notebook-min-width:992px;
+$notebook-max-width:1199px;
+/* Desktops */
+$desktop-min-width: 1200px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-min-width}) and (max-width: #{$mobile-max-width}) {
+    @content;
+    }
+  }
+
+@mixin smartmobile {
+  @media (min-width: #{$smartmobile-min-width}) and (max-width: #{$smartmobile-max-width}) {
+    @content;
+    }
+  }
+
+@mixin tablet {
+  @media (min-width: #{$tablet-min-width}) and (max-width: #{$tablet-max-width}) {
+    @content;
+    }
+  }
+
+@mixin notebook {
+  @media (min-width: #{$notebook-min-width}) and (max-width: #{$notebook-max-width}) {
+    @content;
+    }
+  }
+
+@mixin desktop {
+  @media (min-width: #{$desktop-min-width}) {
+    @content;
+    }
+  }

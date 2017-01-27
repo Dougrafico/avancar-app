@@ -1,0 +1,21 @@
+Usamos a lógica do OOCSS (Object Oriented CSS) onde o objetivo é ter o estrutural diferente do visual. Além disso os componentes também devem ser independentes e assim possuem seus comportamentos de maneiras diferentes em estruturas diferentes. A adaptação de cada componente deve ser prática e suas alterações visuais também devem ter pouco impacto.
+
+// EXEMPLO //
+
+Temos um botão confirmar e outro de cancelar. Ambos possuem a mesma estrutura quanto a Width, height, padding, margin(..) e a única divergência entre eles é o background-color, nos exemplos abaixo é possível visualizar os tipos de css
+
+[Css]
+
+.btn-accept {width:100px; height:100px; padding:10px; margin:10px;background-color:#ccc;}
+.btn-cancel {width:100px; height:100px; padding:10px; margin:10px;background-color:#333;}
+
+[OOCSS]
+
+.btn {width:100px; height:100px; padding:10px; margin:10px;background-color:#ccc;}
+.btn-accept {background-color:#ccc;}
+.btn-cancel {background-color:#333;}
+
+A estrutura é padrão entre os dois elementos e seu visual pode ser alterado apenas com a soma de uma classe.
+
+<a href="#" class="btn btn-accept"></a>
+<a href="#" class="btn btn-cancel"></a>

@@ -1,0 +1,19 @@
+stylesheets/
+|
+|-- modules/              # Módulos comuns
+|   |-- _all.scss         # Includes para utilização de todos os módulos
+|   |-- _utility.scss     # Nomes dos módulos
+|   |-- _colors.scss      # Cores em geral
+|   ...
+|
+|-- partials/             # Partials
+|   ...
+|
+|-- vendor/               # CSS ou Sass de outros projetos
+|   ...
+|
+`-- main.scss            # 
+
+// MODULES //
+
+O objetivo dos módulos é integrar todas as variáveis e mixins dentro do projeto. Cadastro de cores, tamanhos, espaçamentos e cálculos.
